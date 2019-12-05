@@ -5,6 +5,10 @@ This is heavily based on https://github.com/JPangburn314/Zabbix3.4-MSSQL-2008-20
 
 These templates and scripts have been tested with MSSQL 2012 and Zabbix 4.2. The template and config are configured for the Zabbix agent to be installed under `C:\zabbix\`. You will need to change the template and `userparameter_mssql.conf` to represent your agent's directory, as well as the setup below.
 
+## Requirements
+
+ - Powershell v3 is required because the scripts use `ConvertTo-Json`.
+
 ## Install
 
 1. Import the `Zabbix MSSQL 2008-2016 template.xml` template to the Zabbix UI. Under Configuration --> Templates.
